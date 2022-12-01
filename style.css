@@ -5,12 +5,14 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 body{
-    background-color:#00cec9;
+    /* background-color:#00cec9;
+     */
+     background:linear-gradient(135deg,rgb(116, 248, 54), rgb(255, 255, 46));
     font-family: 'Roboto', sans-serif;
 }
 .main{
     width: 100%;
-    height: 100vh;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,12 +21,10 @@ body{
 
 #box{
     width: 40%;
-    /* min-height: 300px; */
-    background-color: aliceblue;
+    background-color: rgb(254, 254, 255);
     border-radius: 10px;
     box-shadow: 0px 0px 10px grey;
     padding: 15px;
-    margin: 10px;
 }
 
 .row{
@@ -34,10 +34,35 @@ body{
     font-size: large;
 }
 .btn{
-    background-color:#00cec9;
+    /* background-color:#00cec9;
+     */
+    background:linear-gradient(135deg,rgb(95, 231, 32),	#ebeb39);
     width: 100%;
     padding: 5px;
     border: none;
     border-radius: 5px;
 
 font-size: 20px;}
+
+#hi{
+    margin-bottom: 15px;
+    background:black;
+    color: wheat;
+    width: 100%;
+    float: right;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+#start{
+    margin: 5px;
+    background:black ;
+    color: wheat;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 35px;
+    padding: 5px;
+}
+#time{
+    padding: 5px;
+    float: right;
+}
