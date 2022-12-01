@@ -42,6 +42,10 @@ const questions=[
         'correct':'a',
     }
 ]
+let timer=document.getElementById("time");
+let timesecond=50;
+timer.innerHTML=`00.${timesecond}`;
+
 let index=0;
 let total=questions.length;
 let score=0;
@@ -50,6 +54,7 @@ const questionvalue=document.getElementById("questionvalue");
 const optionvalue=document.querySelectorAll(".options");
 
 const  loadquestion=()=>{
+     
      if(index===total){
         return endquiz();
      }
@@ -106,7 +111,26 @@ const submitquiz=()=>{
      <h2>${score}/ ${total} are correct </h2>
     `
  }
+
+//  const previousquestion=()=>{
+//     if(index>0){
+//        index--;
+//     }
+//  }
 loadquestion();
+
+function starttimer(){
+    if(timesecond>10){
+        timesecond--;
+        timer.innerHTML=`00.${timesecond}`
+    }else if(timesecond>0&&timesecond<=10){
+        timesecond--;
+        timer.innerHTML=`00.0${timesecond}`;
+    }
+    else{
+        endquiz();
+    }
+}
 
 
 
